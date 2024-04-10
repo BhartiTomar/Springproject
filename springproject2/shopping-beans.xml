@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans>
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location" value="classpath:discounts.properties" />
+    </bean>
+ 
+    <bean id="product" class="com.example.Product">
+    	<constructor-arg value="$r{specialcustomer.discount}" />
+    </bean>
+    
+	<bean id="battery" class="com.example.Battery">
+		<constructor-arg value="${summer.discount}" />
+	</bean>
+ 
+ 	<bean id="disc" class="com.example.Disc">
+  		<constructor-arg value="${endofyear.discont}" />
+ 	</bean>
+</beans>
