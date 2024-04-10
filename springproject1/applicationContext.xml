@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bean id="Battery" class="spring.com.learning.day1session1.Battery">
+    <property name="productId" value="1" />
+    <property name="productName" value="AAA Battery" />
+    <property name="price" value="5.99" />
+    <property name="rechargeable" value="true" />
+</bean>
+
+<bean id="Disc" class="spring.com.learning.day1session1.Disc">
+    <property name="productId" value="2" />
+    <property name="productName" value="DVD Disc" />
+    <property name="price" value="9.99" />
+    <property name="capacity" value="700" />
+</bean>
